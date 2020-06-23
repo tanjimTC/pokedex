@@ -14,10 +14,10 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL +'/'}>
+        <Route exact path='/'>
           <PokeDex/>
         </Route>
-        <Route path={process.env.PUBLIC_URL +'/pokemon/:pokemonId'}>
+        <Route path='/pokemon/:pokemonId'>
           <Pokemon/>
         </Route>
         <Route path='*'> 
