@@ -17,8 +17,15 @@ function App() {
         <Route exact path='/'>
           <PokeDex/>
         </Route>
-        <Route path='/:pokemonId'>
+        <Route path='/pokemon/:pokemonId'>
           <Pokemon/>
+        </Route>
+        <Route path='*'> 
+          <center>
+            <h3>
+              page not found
+            </h3>
+          </center>
         </Route>
       </Switch>
       </ThemeProvider>
